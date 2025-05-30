@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reading Comprehension Digital Test</title> 
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- SLIDE 1 -->
+  <div class="slide" id="slide1">
+    <h1>📖 Reading Comprehension Digital Test</h1>
+    <h2>Topic: My Unforgettable Trip to Yogyakarta</h2>
+    <p class="creator">Created by: <strong>Deswitha Clara Rotasouw</strong></p>
+    <button class="btn-start" onclick="startTest()">▶ Start Test</button>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide" id="slide2" style="display:none;">
+    <div class="container">
+      <h2>Reading Text</h2>
+      <div class="text-box">
+        <p>Last December, I had an unforgettable trip with my classmates to Yogyakarta. It was a school trip organized to visit several historical places and enjoy the culture of the city.</p>
+        <p>We departed from Semarang at 7 a.m. by bus. During the journey, we sang songs, played games, and enjoyed the beautiful scenery along the way. Our first destination was Borobudur Temple. It is one of the most famous Buddhist temples in the world. When we arrived, our guide explained the history of the temple and we took many pictures together.</p>
+        <p>After visiting Borobudur, we continued our trip to Malioboro Street. It is a famous shopping street where we bought souvenirs, tasted local food, and interacted with local people. I bought some batik clothes and keychains for my family.</p>
+        <p>We stayed in Yogyakarta for two days and one night. On the second day, we visited Prambanan Temple and the Sultan’s Palace. Both places were amazing and rich in history. I learned a lot about Javanese culture and traditions.</p>
+        <p>In the evening, we returned to Semarang. Although we were tired, we felt happy and grateful for the experience. It was one of the best trips I have ever had, and I hope to visit Yogyakarta again someday.</p>
+      </div>
+
+      <h3>Multiple Choice Questions</h3>
+      <form id="quizForm">
+
+        <div class="question-card">
+          <p>1. What was the purpose of the writer’s trip to Yogyakarta?</p>
+          <label><input type="radio" name="q1" value="A"> A. Family vacation</label>
+          <label><input type="radio" name="q1" value="B"> B. Business trip</label>
+          <label><input type="radio" name="q1" value="C"> C. School trip</label>
+        </div>
+
+        <div class="question-card">
+          <p>2. What was the first destination they visited?</p>
+          <label><input type="radio" name="q2" value="A"> A. Malioboro Street</label>
+          <label><input type="radio" name="q2" value="B"> B. Borobudur Temple</label>
+          <label><input type="radio" name="q2" value="C"> C. Prambanan Temple</label>
+        </div>
+
+        <div class="question-card">
+          <p>3. How many days did they spend in Yogyakarta?</p>
+          <label><input type="radio" name="q3" value="A"> A. One day</label>
+          <label><input type="radio" name="q3" value="B"> B. Three days</label>
+          <label><input type="radio" name="q3" value="C"> C. Two days and one night</label>
+        </div>
+
+        <div class="question-card">
+          <p>4. What did the writer buy for their family?</p>
+          <label><input type="radio" name="q4" value="A"> A. Batik clothes and keychains</label>
+          <label><input type="radio" name="q4" value="B"> B. Local food</label>
+          <label><input type="radio" name="q4" value="C"> C. Historical books</label>
+        </div>
+
+        <div class="question-card">
+          <p>5. How did the writer feel after the trip?</p>
+          <label><input type="radio" name="q5" value="A"> A. Tired and upset</label>
+          <label><input type="radio" name="q5" value="B"> B. Sad and regretful</label>
+          <label><input type="radio" name="q5" value="C"> C. Happy and grateful</label>
+        </div>
+
+        <h3>True/False Questions</h3>
+
+        <div class="question-card">
+          <p>6. The writer’s trip was organized by their family. (T/F)</p>
+          <label><input type="radio" name="q6" value="T"> True</label>
+          <label><input type="radio" name="q6" value="F"> False</label>
+        </div>
+
+        <div class="question-card">
+          <p>7. They visited the Sultan’s Palace on the second day. (T/F)</p>
+          <label><input type="radio" name="q7" value="T"> True</label>
+          <label><input type="radio" name="q7" value="F"> False</label>
+        </div>
+
+        <div class="question-card">
+          <p>8. The writer hopes to visit Yogyakarta again. (T/F)</p>
+          <label><input type="radio" name="q8" value="T"> True</label>
+          <label><input type="radio" name="q8" value="F"> False</label>
+        </div>
+
+        <button type="button" class="btn-submit" onclick="checkAnswers()">📊 Submit Answers</button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
